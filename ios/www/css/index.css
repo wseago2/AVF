@@ -23,23 +23,52 @@
 body {
     color: #FFFFFF;
 	background-color: #000000;
-	background-image: url("../img/orionA.jpg");
     font-family:'HelveticaNeue-Light', 'HelveticaNeue', Helvetica, Arial, sans-serif;
     font-size:18px;
-    height:100%;
-    margin:10px;
-    padding:0px;
-    width:100%;
 }
 
+header {
+    height:90px;
+    padding:2%;
+}
+
+section {
+    padding:2%;
+}
+
+#main {
+    float:left;
+    width:50%;
+}
+
+footer {
+    padding:2%;
+}
 
 h1 {
-    font-size:24px;
+    font-size:36px;
     font-weight:normal;
     margin:0px;
     overflow:visible;
     padding:0px;
 }
+
+h2 {
+    font-size:24px;
+    font-weight:normal;
+    margin:0px;
+    overflow:visible;
+}
+
+a {
+    line-height: 64px; /* pic height change for different devices */
+    vertical-align: middle;
+}
+a img {
+    vertical-align: bottom;
+    padding:5px;
+}
+
 
 
 

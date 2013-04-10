@@ -17,12 +17,12 @@
        under the License.
  */
 
-package com.avfdemoapp.app;
+package com.wseago2.fullsail.AVFDemo;
 
 import android.os.Bundle;
 import org.apache.cordova.*;
 
-public class androidDemoApp extends DroidGap
+public class AndroidDemo extends DroidGap
 {
     @Override
     public void onCreate(Bundle savedInstanceState)
