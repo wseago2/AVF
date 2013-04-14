@@ -20,33 +20,69 @@
     -webkit-tap-highlight-color: rgba(0,0,0,0); /* make transparent link selection, adjust last value opacity 0 to 1.0 */
 }
 
-body {
-    color: #FFFFFF;
-	background-color: #000000;
-    font-family:'HelveticaNeue-Light', 'HelveticaNeue', Helvetica, Arial, sans-serif;
-    font-size:18px;
+@media only screen and (max-width: 480px) {
+    #page {
+        width: 480px;
+        margin-left: 1%;
+    }
 }
 
+@media only screen and (min-width: 481px) and (max-width: 768px) {
+    #page {
+        width: 768px;
+        margin-left: 1%;
+    }
+}
+
+@media only screen and (min-width: 769px) {
+    #native {
+        float:left;
+        width: 59%; 
+        height: 500px;
+    }
+    #data {
+        float: right;
+        margin-bottom: 2%;
+        width: 35%; 
+    }
+
+    #research {
+        float: right;
+        margin-top: 0%;
+        width: 35%; 
+    }
+
+}
+
+body {
+    color: #FFFFFF;
+	background-image: url(../img/texture1.gif);
+    font: normal 100% HelveticaNeue-Light, HelveticaNeue, Helvetica, Arial, sans-serif; /* Font = 16px */
+}
+
+#page {
+        width: 98%;
+        margin-left: 1%;
+    }
+
 header {
-    height:90px;
-    padding:2%;
+    height:20%;
+    width: 98%;
+    margin-top: 2%;
+    margin-bottom: 0%;
+    padding: 1%;
+    background-color: #000000;
 }
 
 section {
-    padding:2%;
-}
-
-#main {
-    float:left;
-    width:50%;
-}
-
-footer {
-    padding:2%;
+    margin-top: 2%;
+    margin-bottom: 2%;
+    padding: 1%;
+    background-color: #000000
 }
 
 h1 {
-    font-size:36px;
+    font-size: 2.25em; /* 36px/16px */
     font-weight:normal;
     margin:0px;
     overflow:visible;
@@ -54,10 +90,14 @@ h1 {
 }
 
 h2 {
-    font-size:24px;
+    font-size: 1.5em; /* 24px/16px */
     font-weight:normal;
     margin:0px;
     overflow:visible;
+}
+
+img {
+    max-width: 100%;
 }
 
 a {
@@ -67,6 +107,11 @@ a {
 a img {
     vertical-align: bottom;
     padding:5px;
+}
+
+ul {
+   list-style:none;
+   padding-left: 0%;
 }
 
 
