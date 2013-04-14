@@ -21,48 +21,53 @@
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
         <meta name="format-detection" content="telephone=no" />
-        <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width, height=device-height, target-densitydpi=device-dpi" />
+        <meta name="viewport" content="width=device-width, minimum-scale=1.0, maximum-scale=1.0">
         <link rel="stylesheet" type="text/css" href="css/index.css" />
         <title>ios Demo App</title>
     </head>
     <body>
-        <header>
-            <h1>Android Demo App</h1>
-            <p>Wesley Seago<br />
-            AVF 1304</p>
-        </header>
-        <hr>
-        <section id="main">
-            <section class="native">
+         <div id="page">
+            <header>
+                <h1>Android Demo App</h1>
+                <p>Wesley Seago<br />
+                AVF 1304</p>
+            </header>
+            <section id="native">
                 <h2>Native Features</h2>
-                <a href="#"><img src="img/compass.png" alt="Compass" />Compass</a><br />
-                <a href="#"><img src="img/connect.png" alt="Connection Information" />Connection Information</a><br />
-                <a href="#"><img src="img/geo.png" alt="Geolocation" />Geolocation</a><br />
-                <a href="#"><img src="img/camera.png" alt="Camera" />Camera</a><br />
-                <a href="#"><img src="img/contacts.png" alt="Contacts" />Contacts</a><br />
+                    <ul>
+                        <li><a href="#"><img src="img/compass.png" alt="Compass" />Compass</a><br /></li>
+                        <li><a href="#"><img src="img/connect.png" alt="Connection Information" />Connection Information</a><br /></li>
+                        <li><a href="#"><img src="img/geo.png" alt="Geolocation" />Geolocation</a><br /></li>
+                        <li><a href="#"><img src="img/camera.png" alt="Camera" />Camera</a><br /></li>
+                        <li><a href="#"><img src="img/contacts.png" alt="Contacts" />Contacts</a><br /></li>
+                    </ul>
             </section>
-        </section>
-        <section id="side">
-            <section>
+            <section id="data">
                 <h2>Data</h2>
-                <a href="#"><img src="img/twitter.png" alt="Twitter" />Twitter</a><br />
-                <a href="#"><img src="img/weather.png" alt="Weather" />Weather</a><br />
+                    <ul>
+                        <li><a href="#"><img src="img/twitter.png" alt="Twitter" />Twitter</a><br /></li>
+                        <li><a href="#"><img src="img/weather.png" alt="Weather" />Weather</a><br /></li>
+                    </ul>
             </section>
-            <articl>
+            <section id="research">
                 <h2>Research</h2>
-                <a href="#">Research Week One</a><br />
-                <a href="#">Research Week Two</a><br />
-                <a href="#">Research Week Three</a><br />
-            </article>
-        </section>
-        <hr>
-        <footer>
-            <a href="#"><img src="img/about.png" alt="About" />About</a>
-        </footer>
-        <script type="text/javascript" src="cordova-2.5.0.js"></script>
-        <script type="text/javascript" src="js/index.js"></script>
-        <script type="text/javascript">
-            app.initialize();
-        </script>
+                    <ul>
+                        <li><a href="#">Research Week One</a><br /></li>
+                        <li><a href="#">Research Week Two</a><br /></li>
+                        <li><a href="#">Research Week Three</a><br /></li>
+                    </ul>
+            </section>
+ <!--       <section>
+                <footer>
+                    <a href="#"><img src="img/about.png" alt="About" />About</a>
+                </footer>
+            </section>
+    -->
+            <script type="text/javascript" src="cordova-2.5.0.js"></script>
+            <script type="text/javascript" src="js/index.js"></script>
+            <script type="text/javascript">
+                app.initialize();
+            </script>
+        </div>
     </body>
 </html>
