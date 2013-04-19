@@ -1,73 +1,65 @@
 <!DOCTYPE html>
-<!--
-    Licensed to the Apache Software Foundation (ASF) under one
-    or more contributor license agreements.  See the NOTICE file
-    distributed with this work for additional information
-    regarding copyright ownership.  The ASF licenses this file
-    to you under the Apache License, Version 2.0 (the
-    "License"); you may not use this file except in compliance
-    with the License.  You may obtain a copy of the License at
 
-    http://www.apache.org/licenses/LICENSE-2.0
-
-    Unless required by applicable law or agreed to in writing,
-    software distributed under the License is distributed on an
-    "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
-     KIND, either express or implied.  See the License for the
-    specific language governing permissions and limitations
-    under the License.
--->
 <html>
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
         <meta name="format-detection" content="telephone=no" />
-        <meta name="viewport" content="width=device-width, minimum-scale=1.0, maximum-scale=1.0">
-        <link rel="stylesheet" type="text/css" href="css/index.css" />
-        <title>ios Demo App</title>
+        <meta name="viewport" content="width=device-width, minimum-scale=1.0" />
+        <link rel="stylesheet" type="text/css" href="css/normalize.css" media="screen">
+        <link rel="stylesheet" type="text/css" href="css/grid.css" media="screen">
+        <link rel="stylesheet" type="text/css" href="css/index1.css" />
+        <title>Android Demo App</title>
     </head>
     <body>
-         <div id="page">
+        <div class="container">
             <header>
                 <h1>Android Demo App</h1>
-                <p>Wesley Seago<br />
-                AVF 1304</p>
+                <h3>Wesley Seago<br />
+                AVF 1304</h3>
             </header>
-            <section id="native">
-                <h2>Native Features</h2>
-                    <ul>
-                        <li><a href="#"><img src="img/compass.png" alt="Compass" />Compass</a><br /></li>
-                        <li><a href="#"><img src="img/connect.png" alt="Connection Information" />Connection Information</a><br /></li>
-                        <li><a href="#"><img src="img/geo.png" alt="Geolocation" />Geolocation</a><br /></li>
-                        <li><a href="#"><img src="img/camera.png" alt="Camera" />Camera</a><br /></li>
-                        <li><a href="#"><img src="img/contacts.png" alt="Contacts" />Contacts</a><br /></li>
-                    </ul>
-            </section>
-            <section id="data">
-                <h2>Data</h2>
-                    <ul>
-                        <li><a href="#"><img src="img/twitter.png" alt="Twitter" />Twitter</a><br /></li>
-                        <li><a href="#"><img src="img/weather.png" alt="Weather" />Weather</a><br /></li>
-                    </ul>
-            </section>
-            <section id="research">
-                <h2>Research</h2>
-                    <ul>
-                        <li><a href="#">Research Week One</a><br /></li>
-                        <li><a href="#">Research Week Two</a><br /></li>
-                        <li><a href="#">Research Week Three</a><br /></li>
-                    </ul>
-            </section>
- <!--       <section>
-                <footer>
-                    <a href="#"><img src="img/about.png" alt="About" />About</a>
-                </footer>
-            </section>
-    -->
+                <section class="native grid_6 alpha">
+                    <h2>Native Features</h2>
+                        <ul class="list">
+                            <li><a href="#"><img src="img/compass.png" alt="Compass" />Compass</a><br /></li>
+                        </ul>
+                        <ul class="list">
+                            <li><a href="#"><img src="img/connect.png" alt="Connection Information" />Connection Information</a><br /></li>
+                        </ul>
+                        <ul class="list">
+                            <li><a href="#"><img src="img/geo.png" alt="Geolocation" />Geolocation</a><br /></li>
+                        </ul>
+                        <ul class="list">
+                            <li><a href="#"><img src="img/camera.png" alt="Camera" />Camera</a><br /></li>
+                        </ul>
+                        <ul class="list">
+                            <li><a href="#"><img src="img/contacts.png" alt="Contacts" />Contacts</a><br /></li>
+                        </ul>
+                </section>
+                <section id="twitterHeader" class="tweet grid_6 omega">
+                </section>
+                <section class="research grid_6 alpha">
+                    <h2>Research</h2>
+                        <ul class="list">
+                            <li><a href="week1.html">Research Week One</a><br /></li>
+                        </ul>
+                        <ul class="list">
+                            <li><a href="week2.html">Research Week Two</a><br /></li>
+                        </ul>
+                        <ul class="list">
+                            <li><a href="week3.html">Research Week Three</a><br /></li>
+                        </ul>
+                </section>
+                <section id="weatherHeader" class="weather grid_6 omega">
+                </section>
+        </div>
             <script type="text/javascript" src="cordova-2.5.0.js"></script>
             <script type="text/javascript" src="js/index.js"></script>
+            <script type="text/javascript" src="libs/jquery-1.7.2.min.js"></script>
+            <script type="text/javascript" src="js/main.js"></script>
             <script type="text/javascript">
                 app.initialize();
             </script>
-        </div>
     </body>
 </html>
+
+  
