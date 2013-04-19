@@ -1,9 +1,6 @@
-$("document").ready (function () {
-	
+$("document").ready (function () {	
 	getTwitter();
-	getWeather();
-	
-	
+	getWeather();	
 });
 
 var getTwitter = function (){
@@ -26,31 +23,26 @@ var getTwitter = function (){
 							'<li>' + tdata.results[i].text + ' ' + '</li>' +
 							'</ul>'
 						).appendTo('#twitterHeader');
-				}
-
-				
+				}	
 		}
-	})
+	});
 };
 
 var getWeather = function (){
 	$(".weatherHeader").remove();
 		var makeweatherHeader = $('<h2 class="weatherHeader">Weather</h2>');
-		var makeSub = $('<h4 class="weatherHeader">Orlando, FL</h4>');
 		makeweatherHeader.appendTo('#weatherHeader');
-		makeSub.appendTo('#weatherHeader');
 			$.ajax({
 				url: 'http://api.worldweatheronline.com/free/v1/weather.ashx?q=Orlando&format=json&num_of_days=5&key=ugp5sknf56rtzf69nt5p59rx',
 				type: 'GET',
 				dataType: 'jsonp',
 				success: function (weatherData){
 					console.log(weatherData);					
-					var currentCondition = $();
-					currentCondition.appendTo('#weatherHeader');
-					for (i=0, l=weatherData.data.current_condition.length; i<l; i++){						
+					for (i=0, l=weatherData.data.current_condition.length; i<l; i++){
+						$('<ul class="weatherCity">' + '<li><h3>Orlando, FL</h3></li>' + '</ul>').appendTo('#weatherHeader');						
 							$(' ' +
 									'<ul class="weatherList">' +
-										'<li> Current Conditions: ' + weatherData.data.current_condition[i].weatherDesc[i].value + '</li>' +
+										'<li> Current Condition: ' + weatherData.data.current_condition[i].weatherDesc[i].value + '</li>' +
 										'<li> Temperature: ' + weatherData.data.current_condition[i].temp_F + 'F' + '</li>' +
 										'<li> Humidity: ' + weatherData.data.current_condition[i].humidity + '%' + '</li>' +
 										'<li> Precipitation: ' + weatherData.data.current_condition[i].precipMM + '"' + '</li>' +
@@ -61,7 +53,7 @@ var getWeather = function (){
 								).appendTo('#weatherHeader');
 						}
 					}					
-			})
+			});
 };
 
 /* Weather API Notes
@@ -72,12 +64,5 @@ var getWeather = function (){
 	the weather report will be for them.
 */	
 
-/*
-	for (i=0, l=weatherData.data.current_condition.length; i<l; i++){
-		alert(i);
-		alert(weatherData.data.current_condition[i].temp_F);
-		$(".weatherList").remove();
-		$(".twitterList").remove();
-*/
 
 
