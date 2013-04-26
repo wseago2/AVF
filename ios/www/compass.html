@@ -1,3 +1,4 @@
+<!--HTML Lint-->
 <!DOCTYPE html>
 
 <html>
@@ -20,8 +21,25 @@
             </header>
                 <section class="content grid_12">
                     <ul>
-                        <li>
-                        </li>
+                        <li>This is the compass.getCurrentHeading method.<br />
+                        It works with iOS and Android, as well as Windows Phone 7 and 8, Bada, webOS, Tizen and Windows 8.<br />
+                        This method accesses the compass and reports the current heading of the device.</li>
+                    </ul>
+                    <ul>
+                        <li>The current device heading is:</li>
+                    </ul>
+                    <ul id="compassHeading">
+                    </ul>
+                    <ul>
+                        <li>This is the compass.watchHeading method.<br />
+                        It allows the heading to be retrieved at regular intervals.<br />
+                        It works with iOS and Android.</li>
+                    </ul>
+                    <ul>
+                        <button id="startWatch" class="button">Start Watching</button>
+                        <button id="stopWatch" class="button">Stop Watching</button>
+                    </ul>
+                    <ul id="watchHeading">
                     </ul>
                 </section>
             <footer class="footer grid_12">
@@ -29,6 +47,7 @@
             </footer>
         </div>
             <script type="text/javascript" src="cordova-2.5.0.js"></script>
+            <script type="text/javascript" src="libs/jquery-1.7.2.min.js"></script>
             <script type="text/javascript" src="js/compass.js"></script>
     </body>
 </html>
