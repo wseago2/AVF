@@ -1,6 +1,6 @@
 $("document").ready (function () {	
 	getTwitter();
-	getWeather();	
+	getWeather();
 });
 
 var getTwitter = function (){
@@ -63,6 +63,19 @@ var getWeather = function (){
 	enter their own zip code, so that
 	the weather report will be for them.
 */	
+/*
+ /   //Connection Type Function
+    var getConnectionStatus = function () {
+        var networkState = navigator.network.connection.type;
+            var states = {};
+                states[Connection.UNKNOWN]  = 'Unknown Connection';
+                states[Connection.ETHERNET] = 'Ethernet Connection';
+                states[Connection.WIFI]     = 'WiFi Connection';
+                states[Connection.CELL_2G]  = '2G Cellular Connection';
+                states[Connection.CELL_3G]  = '3G Cellular Connection';
+                states[Connection.CELL_4G]  = '4G Cellular Connection';
+                states[Connection.NONE]     = 'Network Connection Unavailable';
+                    alert('Connection Type ' + states[networkState]);
 
-
-
+    };
+*/
