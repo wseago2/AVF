@@ -11,7 +11,7 @@ body {
 
 header {
     padding: 2% 2% 2% 2%;
-    background-color: #452929;
+    background-color: #2D0D0D;
     -moz-border-radius: 10px;
     -webkit-border-radius: 10px;
     -o-border-radius: 10px;
@@ -22,7 +22,7 @@ header {
 }
 
 section {
-    background-color: #452929;
+    background-color: #2D0D0D;
     -moz-border-radius: 10px;
     -webkit-border-radius: 10px;
     -o-border-radius: 10px;
@@ -48,7 +48,7 @@ h1 {
     font-weight: normal;
     margin: 0;
     overflow: visible; 
-    color: #FFFFFF; 
+    color: #A27E7E; 
 }
 
 h2 {
@@ -57,7 +57,7 @@ h2 {
     margin: 0;
     overflow: visible;
     text-align: center; 
-    color: #FFFFFF;
+    color: #A27E7E;
 }
 
 h3 {
@@ -116,11 +116,6 @@ a:visited {
     color:#679494;
 }
 
-.weatherCity {
-    padding-top: 2%;
-    padding-bottom: 2%;
-} 
-
 .button {
     -moz-box-shadow:inset 0 1px 0 0 #f29c93;
     -webkit-box-shadow:inset 0 1px 0 0 #f29c93;
@@ -156,6 +151,65 @@ a:visited {
     height: 20%;
     display: none;
 }
+
+.tweet {
+    background-color: #2D0D0D;
+    display: inline;
+}
+
+.twitterIcon {
+    height: 64px;
+    position: relative;
+    -moz-border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -o-border-radius: 10px;
+    -ms-border-radius: 10px;
+    border-radius: 10px; 
+}
+
+#twitterList.li:first-child.h3 {
+    color: white;
+}
+
+#moonHeader.moonPic {
+    position: absolute;
+    top: 10px;
+    left: 50px;
+}
+
+#moonHeader0 {
+    height: 300px;
+}
+
+#moonHeader1 {
+    height: 300px;
+}
+
+#moonHeader2 {
+    height: 300px;
+}
+
+#moonHeader3 {
+    height: 300px;
+}
+
+#moonHeader4 {
+    height: 300px;
+}
+
+#moonHeader5 {
+    height: 300px;
+}
+
+#weatherHeader.weatherPic {
+    position: absolute;
+    left: 0;
+}
+
+#moonPhaseHeader {
+    text-align: center;
+}
+
 
 @media only screen and (max-width: 768px) {
     h1 {
@@ -193,6 +247,11 @@ a:visited {
         width: 100%;
         min-width: 320px;
     }
+
+    .moon {
+        width: 100%;
+        min-width: 320px;
+    }
 }
 
 @media only screen and (min-width: 769px) {
@@ -206,15 +265,19 @@ a:visited {
     }
 
     .research {
-        height: 420px;
+        height: 510px;
     }
 
     .weather {
+        height: 510px;
+
+    }
+
+    .moon {
         height: 420px;
 
     }
 }
-
 
 
 
